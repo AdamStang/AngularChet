@@ -1,0 +1,9 @@
+<div class="person">
+    <form class="example-form">
+        <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>{{ person.name }}</mat-label>
+            <textarea matInput rows="3" [formControl]="control" [(ngModel)]="value" placeholder="Enter your message here..."></textarea>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="accent" (click)="send()">Send <mat-icon>chevron_right</mat-icon></button>
+</div>

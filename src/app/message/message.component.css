@@ -1,0 +1,16 @@
+mat-card{
+    padding: 10px;
+    margin: 10px;
+    background: #fff;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+mat-card-title{
+    font-weight: normal;
+    font-size: 1.125rem;
+}
+
+mat-card-content{
+    color: #666
+}

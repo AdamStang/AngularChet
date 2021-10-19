@@ -1,0 +1,18 @@
+<div class="messages_wrapper">
+    <div class="messages_container">
+        <h3 class="messages_heading">Chat Window</h3>
+        <mat-card>
+            <mat-card-content>
+                <mat-list>
+                    <mat-list-item *ngFor="let mes of messages">
+                        <mat-icon mat-list-icon>bookmark</mat-icon>
+                        <div mat-line>{{ mes.person }}</div>
+                        <div mat-line>{{ mes.message }}</div>
+                        <mat-divider></mat-divider>
+                    </mat-list-item>
+                </mat-list>
+            </mat-card-content>
+            <button mat-raised-button color="accent" (click)="clear()"><mat-icon>clear</mat-icon> Clear Chat Window</button>
+        </mat-card>
+    </div>
+</div>
